@@ -1,0 +1,43 @@
+{
+  "model": "Qwen/Qwen3-4B",
+  "model_revision": "main",
+  "prompt_file": "tracegen/prompts/plain.txt",
+  "seed": 20261109,
+  "task_count": 3000,
+  "temperature": 0.6,
+  "top_p": 0.95,
+  "top_k": 20,
+  "max_output_tokens": 16384,
+  "max_model_len": 32768,
+  "gpu_memory_utilization": 0.95,
+  "request_timeout_seconds": 1800,
+  "request_attempts": 3,
+  "servers": [
+    {
+      "gpu": 0,
+      "port": 8000,
+      "concurrency": 64,
+      "max_num_seqs": 64
+    },
+    {
+      "gpu": 1,
+      "port": 8001,
+      "concurrency": 64,
+      "max_num_seqs": 64
+    },
+    {
+      "gpu": 2,
+      "port": 8002,
+      "concurrency": 64,
+      "max_num_seqs": 64
+    },
+    {
+      "gpu": 3,
+      "port": 8003,
+      "concurrency": 64,
+      "max_num_seqs": 64
+    }
+  ],
+  "generation_mode": "plain",
+  "samples_per_task": 5
+}

@@ -1,0 +1,10 @@
+.venv/
+.tools/
+.cache/
+__pycache__/
+*.pyc
+*.egg-info/
+runs/
+data/
+*.md
+hf_datasets/

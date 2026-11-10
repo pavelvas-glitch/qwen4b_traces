@@ -1,0 +1,3 @@
+{problem}
+
+Solve the problem and put the final answer in \boxed{{...}}.
